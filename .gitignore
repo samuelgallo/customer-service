@@ -1,0 +1,36 @@
+# Ignorar arquivos específicos
+.DS_Store
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+dist
+build
+parts
+bin
+.notes
+.sass-cache
+node_modules
+npm-debug.log
+.idea
+
+# Ignorar todos os diretorios e arquivos em um diretorio. ignore/*
+/nbproject/
+/ignore/
+/src/vendor/bower_components/
+/bower_components
+/assets
+node_modules
+node_modules/
+www/
+
+# Sass files
+.sass-cache/
+.sass-cache/*
+
+# Usualemente as pastas abaixo devem ser ignoradas (habilitado neste teste por conta das circunstâncias)
+#/app/public/js/
+#/app/public/css/
+#/app/public/images/
+
+

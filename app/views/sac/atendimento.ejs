@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <% include ../layout/head %>
+</head>
+
+<body>
+    <% include ../layout/header %>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="request__wrapper">
+                    	<p>Client: <%= request[0].client %><br />
+            				Subject: <%= request[0].subject %><br />
+            				Origin: <%= request[0].origin %><br />
+            				Subject: <%= request[0].subject %><br />
+            				Estate: <%= request[0].state %><br />
+            				Receptionist: <%= request[0].receptionist %><br />
+            				Data request: <%= request[0].data_criacao %><br />
+            				Message: <%= request[0].message %><br />
+            				
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% include ../layout/footer %>
+</body>
+
+</html>

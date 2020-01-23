@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <% include ../layout/head %>
+</head>
+
+<body>
+    <% include ../layout/header %>
+        <div class="container">
+            <% if(sac.length > 0){ %>
+            <div class="row">
+                <% for(var i = 0; i < sac.length; i++){ %>                    
+                    <div class="col-md-6">
+                        <div class="request__wrapper">
+                        	<p>Client: <%= sac[0].client %><br />
+                				Subject: <%= sac[0].subject %><br />
+                				Receptionist: <%= sac[0].receptionist %><br />
+                				<a href="request?id_request=<%= sac[0].id_request %>">View request</a></p>
+                        </div>
+                    </div>                    
+                <% } %>
+            </div>
+            <% } %>
+        </div>
+    <% include ../layout/footer %>
+</body>
+</html>

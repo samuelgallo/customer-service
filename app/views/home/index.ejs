@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <% include ../layout/head %>
+</head>
+
+<body>
+    <% include ../layout/header %>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="request__wrapper">
+                    	<p>Client: <%= sac[0].client %><br />
+                    	Subject: <%= sac[0].subject %><br />
+                    	Receptionist: <%= sac[0].receptionist %><br />
+                    	<a href="request?id_request=<%= sac[0].id_request %>">view request</a></p> 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="request__wrapper">
+                        <p>Client: <%= sac[1].client %><br />
+                    	Subject: <%= sac[1].subject %><br />
+                    	Receptionist: <%= sac[1].receptionist %><br />
+                    	<a href="request?id_request=<%= sac[0].id_request %>">view request</a></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="row ver_mais">
+                <a href="sac">View all requests</a>
+            </div>
+        </div>
+        <% include ../layout/footer %>
+</body>
+
+</html>
